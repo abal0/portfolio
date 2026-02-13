@@ -1,0 +1,368 @@
+<!-- index.html (About Me Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Portfolio</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navbar -->
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#">
+        <span class="brand__mark"></span>
+        <span class="brand__text">VIDEO EDITING</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#">Home</a></li>
+        <li><a class="nav__link" href="#skill">Skills</a></li>
+          <li><a class="nav__link nav__link--active" href="#projects">projects</a></li>
+        <li><a class="nav__link" href="#services">Services</a></li>
+      
+        <li><a class="nav__link" href="#">Contact</a></li>
+        <li class="nav__dropdown">
+          <button class="nav__link nav__dropbtn" type="button">
+            Pages <span class="chev">▾</span>
+          </button>
+          <div class="nav__dropmenu">
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQ</a>
+          </div>
+        </li>
+      </ul>
+
+      <a class="btn btn--pill btn--primary nav__cta" href="#">Let’s Talk</a>
+    </nav>
+  </header>
+
+  <!-- Page -->
+  <main class="page">
+    <!-- Page Title -->
+    <section class="page-title container">
+      <h1>About Me</h1>
+      <p class="crumbs">Home <span class="sep">›</span> <span class="active">About Me</span></p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about container">
+      <!-- Left visual -->
+      <div class="about__visual">
+        <div class="blob blob--a"></div>
+        <div class="blob blob--b"></div>
+
+       <div class="portrait">
+  <img src="profile pic.png" alt="My Portrait">
+</div>
+
+        <div class="blob blob--c"></div>
+      </div>
+
+      <!-- Right content -->
+      <div class="about__content">
+        <span class="chip">About Me</span>
+
+        <h2>
+          Create content that <br />
+          captures attention and <br />
+          leaves a lasting impact!!!
+        </h2>
+
+        <p class="lead">
+          I help brands and creators tell their stories through professional video editing, eye-catching graphics,
+          and strategic social media content. From engaging visuals to consistent branding, 
+          my work is focused on boosting reach, building identity, and connecting with the right audience.
+        </p>
+
+        <div class="info-grid">
+          <div class="info">
+            <span class="label">Name</span>
+            <span class="value">MD.Abir Hasan</span>
+          </div> 
+          <div class="info">
+            <span class="label">Phone</span>
+            <span class="value">+880 1308850121</span>
+          </div>
+          <div class="info">
+            <span class="label">Email</span>
+            <span class="value">abir43225@gmail.com</span>
+          </div>
+          <div class="info">
+            <span class="label">Twitter</span>
+            <span class="value">@SairaEaston47</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn--pill btn--accent" href="#">Contact Me</a>
+
+          
+        </div>
+      </div>
+    </section>
+    
+  </main>
+<!-- section 2 -->
+<section class="skills-section" id="skill">
+  <div class="skills-container">
+
+    <div class="skills-header">
+      <h2>My Work <span>Skills</span></h2>
+      <p>
+        Professional video editing and post-production expertise with
+        industry-leading software tools.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          🎞️
+        </div>
+        <h3>Adobe Premiere Pro</h3>
+        <div class="progress">
+          <span style="width: 90%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          ✨
+        </div>
+        <h3>After Effects</h3>
+        <div class="progress">
+          <span style="width: 85%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          🖌️
+        </div>
+        <h3>Photoshop</h3>
+        <div class="progress">
+          <span style="width: 80%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          ✂️
+        </div>
+        <h3>CapCut</h3>
+        <div class="progress">
+          <span style="width: 75%"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end of the section 2 end section2end -->
+ <section class="projects-section" id="projects">
+  <div class="projects-container">
+
+    <div class="projects-header">
+      <h2>My <span>Projects</span></h2>
+      <p>A showcase of my recent work across video editing and graphics design.</p>
+    </div>
+
+    <div class="projects-filters" role="tablist" aria-label="Project filters">
+      <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="video" type="button">Video Editing</button>
+      <button class="filter-btn" data-filter="design" type="button">Graphics Design</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- VIDEO 1 -->
+      <article class="project-card project-card--video" data-cat="video">
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/6aKVa9XXaTk?rel=0&modestbranding=1"
+            title="YouTube video player"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="project-meta">
+          <span class="tag">VIDEO EDITING</span>
+          <h3>Cinematic Travel Reel</h3>
+        </div>
+      </article>
+
+      <!-- VIDEO 2 -->
+      <article class="project-card project-card--video" data-cat="video">
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/-1CeS0FblNE?rel=0&modestbranding=1"
+            title="YouTube video player"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="project-meta">
+          <span class="tag">VIDEO EDITING</span>
+          <h3>Music Video Production</h3>
+        </div>
+      </article>
+
+      <!-- VIDEO 3 (known embeddable) -->
+      <article class="project-card project-card--video" data-cat="video">
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/9bZkp7q19f0?rel=0&modestbranding=1"
+            title="Music Video Production"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="project-meta">
+          <span class="tag">VIDEO EDITING</span>
+          <h3>Music Video Production</h3>
+        </div>
+      </article>
+
+      <!-- GRAPHICS DESIGN (1:1 images, no text) -->
+      <article class="project-card project-card--design" data-cat="design">
+        <img src="assets/burger 2.png" alt="Graphics Design Work 1">
+      </article>
+
+      <article class="project-card project-card--design" data-cat="design">
+        <img src="assets/bella bag.png" alt="Graphics Design Work 2">
+      </article>
+
+      <article class="project-card project-card--design" data-cat="design">
+        <img src="assets/shoe 1.png" alt="Graphics Design Work 3">
+      </article>
+
+    </div>
+  </div>
+</section>
+ <!-- end of the section 3 start -->
+<section class="services-section" id="services">
+  <div class="services-container">
+    <div class="services-header">
+      <h2>My <span>Services</span></h2>
+      <p>
+        Professional video editing and creative services to bring your vision to life
+        with stunning visuals and engaging content.
+      </p>
+    </div>
+
+    <div class="services-slider">
+      <button class="nav-btn prev" type="button" aria-label="Previous">← Previous</button>
+
+      <div class="services-track" id="servicesTrack">
+        <!-- card 1 -->
+        <article class="service-card">
+          <img src="assets/service-1.jpg.jpeg" alt="Video Editing">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Video Editing</h3>
+            <a class="service-arrow" href="#" aria-label="Open Video Editing">↗</a>
+          </div>
+        </article>
+
+        <!-- card 2 -->
+        <article class="service-card">
+          <img src="assets/service-2.jpg.jpeg" alt="Graphics Design">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Graphics Design</h3>
+            <a class="service-arrow" href="#" aria-label="Open Graphics Design">↗</a>
+          </div>
+        </article>
+
+        <!-- card 3 -->
+        <article class="service-card">
+          <img src="assets/service-3.jpg.jpeg" alt="Motion Graphics">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Motion Graphics</h3>
+            <a class="service-arrow" href="#" aria-label="Open Motion Graphics">↗</a>
+          </div>
+        </article><!-- card 3.1 -->
+        <article class="service-card">
+          <img src="assets/service 4.jpeg" alt="Motion Graphics">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Social Media Management</h3>
+            <a class="service-arrow" href="#" aria-label="Open Motion Graphics">↗</a>
+          </div>
+        </article>
+        <!-- card 4 -->
+         <article class="service-card">
+          <img src="assets/service-1.jpg.jpeg" alt="Motion Graphics">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Video Editing</h3>
+            <a class="service-arrow" href="#" aria-label="Open Motion Graphics">↗</a>
+          </div>
+        </article>
+         <!-- card 5 -->
+         <article class="service-card">
+          <img src="assets/service-2.jpg.jpeg" alt="Motion Graphics">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Graphics Design</h3>
+            <a class="service-arrow" href="#" aria-label="Open Motion Graphics">↗</a>
+          </div>
+        </article><!-- card 6 -->
+         <article class="service-card">
+          <img src="assets/service-3.jpg.jpeg" alt="Motion Graphics">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Motion Graphics</h3>
+            <a class="service-arrow" href="#" aria-label="Open Motion Graphics">↗</a>
+          </div>
+        </article></article><!-- card 3.1 -->
+        <article class="service-card">
+          <img src="assets/service 4.jpeg" alt="Motion Graphics">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Social Media Management</h3>
+            <a class="service-arrow" href="#" aria-label="Open Motion Graphics">↗</a>
+          </div>
+        </article>
+        <!-- (optional duplicates if you want infinite feel) -->
+        <article class="service-card">
+          <img src="assets/service-1.jpg.jpeg" alt="Video Editing">
+          <div class="service-overlay"></div>
+          <div class="service-content">
+            <h3>Video Editing</h3>
+            <a class="service-arrow" href="#" aria-label="Open Video Editing">↗</a>
+          </div>
+        </article>
+      </div>
+
+      <button class="nav-btn next" type="button" aria-label="Next">Next →</button>
+    </div>
+
+    <div class="services-dots" id="servicesDots" aria-label="Slider pagination">
+      <button class="dot is-active" aria-label="Go to slide 1"></button>
+      <button class="dot" aria-label="Go to slide 2"></button>
+      <button class="dot" aria-label="Go to slide 3"></button>
+      <button class="dot" aria-label="Go to slide 4"></button>
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
